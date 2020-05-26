@@ -72,8 +72,8 @@ namespace FitnessTracker2._0
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(15, 16);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(15, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(549, 212);
             this.panel1.TabIndex = 0;
@@ -83,10 +83,10 @@ namespace FitnessTracker2._0
             this.dietsubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.dietsubmit.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dietsubmit.ForeColor = System.Drawing.SystemColors.Window;
-            this.dietsubmit.Location = new System.Drawing.Point(388, 90);
-            this.dietsubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dietsubmit.Location = new System.Drawing.Point(388, 89);
+            this.dietsubmit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dietsubmit.Name = "dietsubmit";
-            this.dietsubmit.Size = new System.Drawing.Size(133, 75);
+            this.dietsubmit.Size = new System.Drawing.Size(134, 75);
             this.dietsubmit.TabIndex = 8;
             this.dietsubmit.Text = "Add in my log";
             this.dietsubmit.UseVisualStyleBackColor = false;
@@ -96,7 +96,7 @@ namespace FitnessTracker2._0
             // 
             this.remarks.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.remarks.Location = new System.Drawing.Point(246, 171);
-            this.remarks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.remarks.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.remarks.Name = "remarks";
             this.remarks.Size = new System.Drawing.Size(112, 30);
             this.remarks.TabIndex = 7;
@@ -105,17 +105,18 @@ namespace FitnessTracker2._0
             // 
             this.serving_no.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.serving_no.Location = new System.Drawing.Point(246, 112);
-            this.serving_no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.serving_no.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.serving_no.Name = "serving_no";
             this.serving_no.Size = new System.Drawing.Size(112, 30);
             this.serving_no.TabIndex = 6;
+            this.serving_no.ValueChanged += new System.EventHandler(this.serving_no_ValueChanged);
             // 
             // diet
             // 
             this.diet.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.diet.FormattingEnabled = true;
             this.diet.Location = new System.Drawing.Point(246, 58);
-            this.diet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.diet.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.diet.Name = "diet";
             this.diet.Size = new System.Drawing.Size(112, 31);
             this.diet.TabIndex = 5;
@@ -165,10 +166,10 @@ namespace FitnessTracker2._0
             // 
             this.panel2.Controls.Add(this.diettoday);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(583, 16);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(584, 15);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(289, 522);
+            this.panel2.Size = new System.Drawing.Size(290, 522);
             this.panel2.TabIndex = 1;
             // 
             // diettoday
@@ -176,9 +177,9 @@ namespace FitnessTracker2._0
             this.diettoday.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.diettoday.FormattingEnabled = true;
             this.diettoday.Location = new System.Drawing.Point(24, 80);
-            this.diettoday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.diettoday.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.diettoday.Name = "diettoday";
-            this.diettoday.Size = new System.Drawing.Size(246, 235);
+            this.diettoday.Size = new System.Drawing.Size(246, 202);
             this.diettoday.TabIndex = 1;
             // 
             // label1
@@ -205,8 +206,8 @@ namespace FitnessTracker2._0
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(15, 236);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Location = new System.Drawing.Point(15, 235);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(549, 302);
             this.panel3.TabIndex = 2;
@@ -214,7 +215,7 @@ namespace FitnessTracker2._0
             // cal_in
             // 
             this.cal_in.Location = new System.Drawing.Point(246, 258);
-            this.cal_in.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cal_in.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.cal_in.Name = "cal_in";
             this.cal_in.Size = new System.Drawing.Size(112, 26);
             this.cal_in.TabIndex = 12;
@@ -223,7 +224,7 @@ namespace FitnessTracker2._0
             // fat_in
             // 
             this.fat_in.Location = new System.Drawing.Point(246, 208);
-            this.fat_in.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fat_in.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.fat_in.Name = "fat_in";
             this.fat_in.Size = new System.Drawing.Size(112, 26);
             this.fat_in.TabIndex = 10;
@@ -231,8 +232,8 @@ namespace FitnessTracker2._0
             // 
             // vitamin_in
             // 
-            this.vitamin_in.Location = new System.Drawing.Point(246, 159);
-            this.vitamin_in.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.vitamin_in.Location = new System.Drawing.Point(246, 158);
+            this.vitamin_in.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.vitamin_in.Name = "vitamin_in";
             this.vitamin_in.Size = new System.Drawing.Size(112, 26);
             this.vitamin_in.TabIndex = 9;
@@ -241,7 +242,7 @@ namespace FitnessTracker2._0
             // protein_in
             // 
             this.protein_in.Location = new System.Drawing.Point(246, 111);
-            this.protein_in.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.protein_in.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.protein_in.Name = "protein_in";
             this.protein_in.Size = new System.Drawing.Size(112, 26);
             this.protein_in.TabIndex = 8;
@@ -250,7 +251,7 @@ namespace FitnessTracker2._0
             // carbo_in
             // 
             this.carbo_in.Location = new System.Drawing.Point(246, 60);
-            this.carbo_in.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.carbo_in.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.carbo_in.Name = "carbo_in";
             this.carbo_in.Size = new System.Drawing.Size(112, 26);
             this.carbo_in.TabIndex = 7;
@@ -280,7 +281,7 @@ namespace FitnessTracker2._0
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(76, 159);
+            this.label9.Location = new System.Drawing.Point(76, 158);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 29);
             this.label9.TabIndex = 3;
