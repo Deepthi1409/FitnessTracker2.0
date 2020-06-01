@@ -52,6 +52,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ChangePWD = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.ht)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wt)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -68,7 +70,7 @@
             this.Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Save.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Save.Location = new System.Drawing.Point(554, 359);
+            this.Save.Location = new System.Drawing.Point(546, 328);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(162, 68);
             this.Save.TabIndex = 7;
@@ -80,7 +82,7 @@
             // ht
             // 
             this.ht.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ht.Location = new System.Drawing.Point(175, 42);
+            this.ht.Location = new System.Drawing.Point(176, 42);
             this.ht.Maximum = new decimal(new int[] {
             250,
             0,
@@ -99,7 +101,7 @@
             // wt
             // 
             this.wt.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wt.Location = new System.Drawing.Point(175, 80);
+            this.wt.Location = new System.Drawing.Point(176, 80);
             this.wt.Name = "wt";
             this.wt.Size = new System.Drawing.Size(63, 35);
             this.wt.TabIndex = 13;
@@ -115,7 +117,7 @@
             this.Updatenew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Updatenew.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Updatenew.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Updatenew.Location = new System.Drawing.Point(554, 433);
+            this.Updatenew.Location = new System.Drawing.Point(546, 411);
             this.Updatenew.Name = "Updatenew";
             this.Updatenew.Size = new System.Drawing.Size(162, 68);
             this.Updatenew.TabIndex = 8;
@@ -132,9 +134,9 @@
             "Low physical Activity",
             "High physical Activity",
             "Moderate physical Activiy"});
-            this.category.Location = new System.Drawing.Point(173, 125);
+            this.category.Location = new System.Drawing.Point(172, 125);
             this.category.Name = "category";
-            this.category.Size = new System.Drawing.Size(207, 31);
+            this.category.Size = new System.Drawing.Size(206, 31);
             this.category.TabIndex = 15;
             // 
             // label3
@@ -164,7 +166,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(27, 44);
+            this.label1.Location = new System.Drawing.Point(27, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 28);
             this.label1.TabIndex = 0;
@@ -181,7 +183,7 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox3.Location = new System.Drawing.Point(469, 57);
+            this.groupBox3.Location = new System.Drawing.Point(470, 57);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(410, 243);
             this.groupBox3.TabIndex = 5;
@@ -190,16 +192,16 @@
             // 
             // email
             // 
-            this.email.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.email.Location = new System.Drawing.Point(143, 90);
+            this.email.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.email.Location = new System.Drawing.Point(142, 89);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(215, 35);
+            this.email.Size = new System.Drawing.Size(244, 30);
             this.email.TabIndex = 11;
             // 
             // phone
             // 
             this.phone.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.phone.Location = new System.Drawing.Point(143, 45);
+            this.phone.Location = new System.Drawing.Point(142, 45);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(144, 35);
             this.phone.TabIndex = 10;
@@ -235,9 +237,9 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox2.Location = new System.Drawing.Point(38, 321);
+            this.groupBox2.Location = new System.Drawing.Point(38, 322);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(391, 217);
+            this.groupBox2.Size = new System.Drawing.Size(392, 217);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Contact Details";
@@ -245,16 +247,16 @@
             // agebox
             // 
             this.agebox.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agebox.Location = new System.Drawing.Point(143, 93);
+            this.agebox.Location = new System.Drawing.Point(142, 92);
             this.agebox.Name = "agebox";
-            this.agebox.Size = new System.Drawing.Size(215, 35);
+            this.agebox.Size = new System.Drawing.Size(216, 35);
             this.agebox.TabIndex = 9;
             this.agebox.Value = new System.DateTime(2000, 6, 16, 0, 0, 0, 0);
             // 
             // name
             // 
             this.name.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.Location = new System.Drawing.Point(143, 41);
+            this.name.Location = new System.Drawing.Point(142, 42);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(100, 35);
             this.name.TabIndex = 8;
@@ -264,7 +266,7 @@
             this.female.AutoSize = true;
             this.female.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.female.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.female.Location = new System.Drawing.Point(143, 180);
+            this.female.Location = new System.Drawing.Point(142, 180);
             this.female.Name = "female";
             this.female.Size = new System.Drawing.Size(101, 32);
             this.female.TabIndex = 7;
@@ -290,7 +292,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(35, 146);
+            this.label4.Location = new System.Drawing.Point(34, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 28);
             this.label4.TabIndex = 5;
@@ -301,7 +303,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(35, 93);
+            this.label5.Location = new System.Drawing.Point(34, 92);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 28);
             this.label5.TabIndex = 4;
@@ -312,7 +314,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(35, 44);
+            this.label6.Location = new System.Drawing.Point(34, 45);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 28);
             this.label6.TabIndex = 3;
@@ -330,12 +332,34 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox1.Location = new System.Drawing.Point(38, 47);
+            this.groupBox1.Location = new System.Drawing.Point(38, 48);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(391, 253);
+            this.groupBox1.Size = new System.Drawing.Size(392, 252);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Basic details";
+            // 
+            // ChangePWD
+            // 
+            this.ChangePWD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ChangePWD.Font = new System.Drawing.Font("Comic Sans MS", 10F);
+            this.ChangePWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ChangePWD.Location = new System.Drawing.Point(500, 506);
+            this.ChangePWD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ChangePWD.Name = "ChangePWD";
+            this.ChangePWD.Size = new System.Drawing.Size(246, 63);
+            this.ChangePWD.TabIndex = 9;
+            this.ChangePWD.Text = "Change Password";
+            this.ChangePWD.UseVisualStyleBackColor = false;
+            this.ChangePWD.Click += new System.EventHandler(this.ChangePWD_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(898, 592);
+            this.panel1.TabIndex = 10;
             // 
             // UserPage
             // 
@@ -343,11 +367,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(885, 588);
+            this.Controls.Add(this.ChangePWD);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Updatenew);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "UserPage";
             this.Text = "UserPage";
             this.Load += new System.EventHandler(this.UserPage_Load);
@@ -388,5 +414,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button ChangePWD;
+        private System.Windows.Forms.Panel panel1;
     }
 }

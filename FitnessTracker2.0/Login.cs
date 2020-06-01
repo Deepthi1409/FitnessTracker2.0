@@ -23,56 +23,56 @@ namespace FitnessTracker2._0
 
         private void login1_Click(object sender, EventArgs e)
         {
-           
-                try
+
+            try
+            {
+                if (user.Text == "" || password.Text == "")
+                    MessageBox.Show("Please enter all mandatory fields");
+                else
                 {
-                    if (user.Text == "" || password.Text == "")
-                        MessageBox.Show("Please enter all mandatory fields");
-                    else
+                    con1.Open();
+                    string command = "select password from user where name='" + user.Text + "';";
+                    MySqlCommand cmd = new MySqlCommand(command, con1);
+                    MySqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.Read())
                     {
-                        con1.Open();
-                        string command = "select password from user where name='" + user.Text + "';";
-                        MySqlCommand cmd = new MySqlCommand(command, con1);
-                        MySqlDataReader dr = cmd.ExecuteReader();
-                        if (dr.Read())
+                        string pd = dr.GetString(0);
+                        if (pd == password.Text)
                         {
-                            string pd = dr.GetString(0);
-                            if (pd == password.Text)
+                            //correct password
                             {
-                                //correct password
-                                {
-                                    Program.userName = user.Text;
+                                Program.userName = user.Text;
 
                                 //code for home page
-                                    this.Close();
-                                    myparent.toggleNav();
+                                this.Close();
+                                myparent.toggleNav();
                                 myparent.openChildForm(new HomePage(myparent));
-                                    
 
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Incorrect  password ! try again!!");
-                            }
 
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Incorrect user name !", "Attention required");
+                            MessageBox.Show("Incorrect  password ! try again!!");
                         }
+
                     }
-
+                    else
+                    {
+                        MessageBox.Show("Incorrect user name !", "Attention required");
+                    }
                 }
-                catch (Exception er)
-                {
-                    MessageBox.Show(er.Message);
-                }
-                con1.Close();
+
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+            con1.Close();
 
 
 
-            
+
 
         }
 
@@ -85,6 +85,17 @@ namespace FitnessTracker2._0
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            myparent.openChildForm(new ForgotPassword(myparent));
+            myparent.hidesub();
+        }
+
+        private void user_TextChanged(object sender, EventArgs e)
+        {
+            Program.userName = user.Text;
         }
     }
 }
